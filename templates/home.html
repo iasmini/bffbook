@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Home</h2>
+    {{ base_dir }}
+  {% if user.is_authenticated %}
+    <p>{{ user.name }}</p>
+  {% endif %}
+{% endblock %}
